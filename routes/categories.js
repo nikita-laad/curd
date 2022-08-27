@@ -22,7 +22,7 @@ router.post('/', async(req, res) => {
         })
         try {
             const cat = await category.save()
-            res.status(201).send(cat);
+            res.status(201).send(cat)
         } catch (err) {
             res.status(400).send(err);
         }
